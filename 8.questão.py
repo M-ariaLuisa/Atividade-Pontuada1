@@ -1,18 +1,18 @@
 import os
 os.system("cls")
 
-cor = str(input("Digite a cor do produto desejado: "))
+cor = str(input("Digite a cor do produto desejado (Verde, Azul, Amarelo ou Vermelho): "))
 
 match cor:
-    case "verde":
+    case "Verde":
         print("Custa R$ 10,00")
 
-    case "azul": 
+    case "Azul": 
         print("Custa R$ 20,00")
 
-    case "amarelo":
+    case "Amarelo":
         print("Custa R$ 30,00")
 
-    case "vermelho":
+    case "Vermelho":
         print("Custa R$ 40,00")
    

@@ -3,24 +3,25 @@ os.system("cls")
 
 nome= str(input("Digite o nome do produto: "))
 quantidade= int(input("Digite a quantidade adquirida: "))
-preço= int(input)("Digite o preço unitário: ")
+preço= int(input("Informe o preço unitário do produto: "))
 total= preço * quantidade
 
 if quantidade <= 5:
-    desconto= preço * 0.2
-    preco_com_desconto= preço - desconto
+    desconto= total * 0.02
+    preco_com_desconto= total - desconto
+    print(f"O desconto foi de R${desconto:.2f} e o total a pagar é {preco_com_desconto:.2f}")
 
 
 elif quantidade > 5 and quantidade <= 10:
-    desconto= preço * 0.3
-    preco_com_desconto= preço - desconto
+    desconto= total * 0.03
+    preco_com_desconto= total - desconto
+    print(f"O desconto foi de R${desconto:.2f} e o total a pagar é {preco_com_desconto:.2f}")
 
-elif quantidade > 10:
-    desconto= preço * 0.5
-    preco_com_desconto= preço - desconto
 
 else:
-   print(f"Não tem desconto. O valor é {total}")
+    desconto= total * 0.05
+    preco_com_desconto= total - desconto
+    print(f"O desconto foi de R${desconto:.2f} e o total a pagar é {preco_com_desconto:.2f}")
 
     
 

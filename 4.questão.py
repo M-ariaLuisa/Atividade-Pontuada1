@@ -7,12 +7,32 @@ print(f"""
     Maçã	R$ 1,80 por Kg	R$ 1,50 por Kg
       """)
 
-kg= float(input("Digite a quantidade de kg desejada:"))
-valor= float(input("Digite o valor pago:"))
+morango= float(input("Informe a quantidade de morango desejada (kg):"))
+maca= float(input("Informe a quantidade de maca desejada (kg): "))
 
-if kg>= 10 or valor>= 15:
-    resultado= valor - (valor * 0.10)
-    print(f"Comprou {kg} kg e gastou {resultado} reais")
+if morango <=5:
+    preco_morango= morango * 2.5
 
 else:
-    print(f"Comprou {kg} e gastou {valor}")
+    preco_morango= morango * 2.2
+
+if maca<= 5:
+    preco_maca= maca * 1.8
+
+else:
+    preco_maca= maca * 1.5
+
+peso_total= morango + maca
+valor_total= preco_morango + preco_maca
+
+if peso_total >= 10 or valor_total >=15:
+    valor_com_desconto= valor_total - (valor_total * 0.10) 
+    print(f"Foram adquiridos {morango}kg de morango e {maca}kg de maçã e o total a ser pago é R${valor_com_desconto:.2f} ")
+
+else:
+    print(f"Foram adquiridos {morango}kg de morango e {maca}kg de maçã e o total a ser pago é R${valor_total:.2f} ")
+
+
+
+
+
