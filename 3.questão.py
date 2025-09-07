@@ -6,8 +6,8 @@ b= float(input("Digite o segundo número: "))
 
 if a == b:
  c= a + b 
- print(f"{c}")
+ print(f"Resultado:{c}")
 
 else:
    c= (a * b)
-   print(f"{c}")
+   print(f"Resultado:{c}")
