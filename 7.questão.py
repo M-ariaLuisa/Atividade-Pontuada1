@@ -3,7 +3,7 @@ os.system("cls")
 
 nome= str(input("Digite o nome do produto: "))
 quantidade= int(input("Digite a quantidade adquirida: "))
-preço= int(input("Informe o preço unitário do produto: "))
+preço= float(input("Informe o preço unitário do produto: "))
 total= preço * quantidade
 
 if quantidade <= 5:

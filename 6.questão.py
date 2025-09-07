@@ -11,10 +11,10 @@ if media >= 6:
 
 elif media >=4.1 and media <= 5.9:
     print("Você está em recuperação.")
-    print(f"Sua média na materia foi {media:.2f}")
+    print(f"Sua média na matéria foi {media:.2f}")
 else:
     print("Você foi reprovado.")
-    print(f"Sua média na materia foi {media:.2f}")
+    print(f"Sua média na matéria foi {media:.2f}")
 
 
 

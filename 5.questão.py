@@ -1,8 +1,8 @@
 import os
 os.system("cls")
 
-A = float(input ("Digite o  primeiro numero: "))
-B = float(input ("Digite o segundo numero: "))
+A = int(input ("Digite o  primeiro numero: "))
+B = int(input ("Digite o segundo numero: "))
 operacao = (input("Digite o caractere da operação desejada: + - * / "))
 
 match operacao:
